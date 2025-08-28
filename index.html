@@ -32,8 +32,8 @@
                     <span id="coin">100</span>
                     <img class="w-8 h-8" src="assets/coin.png" alt="">
                 </div>
-                <div class="flex items-center gap-x-2 bg-[#00A63E] px-5 py-3 rounded-full text-white">
-                    <span>0</span>
+                <div class="flex font-semibold items-center gap-x-2 bg-[#00A63E] px-5 py-3 rounded-full text-white">
+                    <span id="copy-counting">0</span>
                     <p>Copy</p>
                 </div>
             </div>
@@ -57,7 +57,7 @@
     <main class="bg-[#F5FFF6]">
         <section id="card-container" class="max-w-[1920px] mx-auto p-12 grid grid-cols-12 gap-x-5">
             <!-- ---Main Cards  -->
-            <div class="col-span-9  grid grid-cols-3 gap-x-5 gap-y-5">
+            <div class="col-span-9 grid grid-cols-3 gap-x-5 gap-y-5">
                 <!-- cards -->
                 <div class="bg-white p-4 w-full rounded-lg shadow callBtn-container">
                     <div class="flex justify-between items-center mb-3">
@@ -67,14 +67,14 @@
                         <i class="text-2xl heart-clicked fa-regular fa-heart"></i>
                     </div>
 
-                    <div>
+                    <div class="">
                         <h2 class="font-bold text-xl card-title">National Emergency Number</h2>
                         <p>National Emergency</p>
                         <br>
-                        <span class="font-bold text-2xl card-num">999</span>
+                        <span class="font-bold text-2xl copy-num card-num">999</span>
 
                         <div class="flex flex-col">
-                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 ">
+                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 w-auto self-start ">
                                 All
                             </div>
                         </div>
@@ -82,12 +82,12 @@
 
                     <div class="flex gap-4 pt-6 ">
                         <div
-                            class="flex items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
+                            class="flex copy-button hover:bg-gray-200 items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
                             <i class="fa-solid fa-copy"></i>
                             <p class="ml-2">Copy</p>
                         </div>
                         <div
-                            class="flex call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
+                            class="flex hover:bg-gray-500 call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
                             <i class="fa-solid fa-phone"></i>
                             <p class="ml-2 ">Call</p>
                         </div>
@@ -110,10 +110,10 @@
                         <h2 class="font-bold text-xl card-title">Police Helpline Number</h2>
                         <p>Police</p>
                         <br>
-                        <span class="font-bold text-2xl card-num">999</span>
+                        <span class="font-bold text-2xl copy-num card-num">999</span>
 
                         <div class="flex flex-col">
-                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 ">
+                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 w-auto self-start ">
                                 Police
                             </div>
                         </div>
@@ -121,12 +121,12 @@
 
                     <div class="flex gap-4 pt-6">
                         <div
-                            class="flex items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
+                            class="flex  copy-button hover:bg-gray-200 items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
                             <i class="fa-solid fa-copy"></i>
                             <p class="ml-2">Copy</p>
                         </div>
                         <div
-                            class="flex call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
+                            class="flex hover:bg-gray-500 call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
                             <i class="fa-solid fa-phone"></i>
                             <p class="ml-2 ">Call</p>
                         </div>
@@ -138,7 +138,9 @@
                 <!-- cards -->
                 <div class="bg-white p-4 w-full rounded-lg shadow callBtn-container">
                     <div class="flex justify-between items-center mb-3">
-                        <img class="w-[50px]" src="assets/fire-service.png" alt="">
+                        <div class="p-2 bg-red-100 rounded-2xl">
+                            <img class="w-[50px]" src="assets/fire-service.png" alt="">
+                        </div>
                         <i class="text-2xl heart-clicked fa-regular fa-heart"></i>
                     </div>
 
@@ -146,10 +148,10 @@
                         <h2 class="font-bold text-xl card-title">Fire Service Number</h2>
                         <p>Fire Service</p>
                         <br>
-                        <span class="font-bold text-2xl card-num">999</span>
+                        <span class="font-bold text-2xl copy-num card-num">999</span>
 
                         <div class="flex flex-col">
-                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 ">
+                            <div class="bg-gray-200 w-auto self-start  rounded-full mt-2 px-4 py-2 ">
                                 Fire
                             </div>
                         </div>
@@ -157,12 +159,12 @@
 
                     <div class="flex gap-4 pt-6">
                         <div
-                            class="flex items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
+                            class="flex copy-button hover:bg-gray-200 items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
                             <i class="fa-solid fa-copy"></i>
                             <p class="ml-2">Copy</p>
                         </div>
                         <div
-                            class="flex call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
+                            class="flex hover:bg-gray-500 call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
                             <i class="fa-solid fa-phone"></i>
                             <p class="ml-2 ">Call</p>
                         </div>
@@ -174,7 +176,9 @@
                 <!-- cards -->
                 <div class="bg-white p-4 w-full rounded-lg shadow callBtn-container">
                     <div class="flex justify-between items-center mb-3">
-                        <img class="w-[50px]" src="assets/ambulance.png" alt="">
+                        <div class="p-2 bg-red-100 rounded-2xl">
+                            <img class="w-[50px]" src="assets/ambulance.png" alt="">
+                        </div>
                         <i id="heart" class="text-2xl heart-clicked fa-regular fa-heart"></i>
                     </div>
 
@@ -182,10 +186,10 @@
                         <h2 class="font-bold text-xl card-title">Ambulance Service</h2>
                         <p>Ambulance</p>
                         <br>
-                        <span class="font-bold text-2xl card-num">1994-999999</span>
+                        <span class="font-bold text-2xl copy-num card-num">1994-999999</span>
 
                         <div class="flex flex-col">
-                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 ">
+                            <div class="bg-gray-200 w-auto self-start  rounded-full mt-2 px-4 py-2 ">
                                 Health
                             </div>
                         </div>
@@ -193,12 +197,12 @@
 
                     <div class="flex gap-4 pt-6">
                         <div
-                            class="flex items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
+                            class="flex copy-button hover:bg-gray-200 items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
                             <i class="fa-solid fa-copy"></i>
                             <p class="ml-2">Copy</p>
                         </div>
                         <div
-                            class="flex call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
+                            class="flex hover:bg-gray-500 call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
                             <i class="fa-solid fa-phone"></i>
                             <p class="ml-2">Call</p>
                         </div>
@@ -210,17 +214,19 @@
                 <!-- cards -->
                 <div class="bg-white p-4 w-full rounded-lg shadow callBtn-container">
                     <div class="flex justify-between items-center mb-3">
-                        <img class="w-[50px]" src="assets/emergency.png" alt="">
+                        <div class="p-2 bg-red-100 rounded-2xl">
+                            <img class="w-[50px]" src="assets/emergency.png" alt="">
+                        </div>
                         <i id="heart" class="text-2xl heart-clicked fa-regular fa-heart"></i>
                     </div>
                     <div>
                         <h2 class="font-bold text-xl card-title">Woman & Child Helpline</h2>
                         <p>Woman & Child Helpline</p>
                         <br>
-                        <span class="font-bold text-2xl card-num">109</span>
+                        <span class="font-bold text-2xl copy-num card-num">109</span>
 
                         <div class="flex flex-col">
-                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 ">
+                            <div class="bg-gray-200 w-auto self-start  rounded-full mt-2 px-4 py-2 ">
                                 Help
                             </div>
                         </div>
@@ -228,12 +234,12 @@
 
                     <div class="flex gap-4 pt-6">
                         <div
-                            class="flex items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
+                            class="flex copy-button hover:bg-gray-200 items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
                             <i class="fa-solid fa-copy"></i>
                             <p class="ml-2">Copy</p>
                         </div>
                         <div
-                            class="flex call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
+                            class="flex hover:bg-gray-500 call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
                             <i class="fa-solid fa-phone"></i>
                             <p class="ml-2">Call</p>
                         </div>
@@ -245,7 +251,9 @@
                 <!-- cards -->
                 <div class="bg-white p-4 w-full rounded-lg shadow callBtn-container">
                     <div class="flex justify-between items-center mb-3">
-                        <img class="w-[50px]" src="assets/emergency.png" alt="">
+                        <div class="p-2 bg-red-100 rounded-2xl">
+                            <img class="w-[50px]" src="assets/emergency.png" alt="">
+                        </div>
                         <i id="heart" class="text-2xl heart-clicked fa-regular fa-heart"></i>
                     </div>
 
@@ -253,10 +261,10 @@
                         <h2 class="font-bold text-xl card-title">Anti-Corruption Helpline</h2>
                         <p>Anti-Corruption</p>
                         <br>
-                        <span class="font-bold text-2xl card-num">106</span>
+                        <span class="font-bold text-2xl copy-num card-num">106</span>
 
                         <div class="flex flex-col">
-                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 ">
+                            <div class="bg-gray-200 w-auto self-start rounded-full mt-2 px-4 py-2 ">
                                 Govt
                             </div>
                         </div>
@@ -264,12 +272,12 @@
 
                     <div class="flex gap-4 pt-6">
                         <div
-                            class="flex items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
+                            class="flex copy-button hover:bg-gray-200 items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
                             <i class="fa-solid fa-copy"></i>
                             <p class="ml-2">Copy</p>
                         </div>
                         <div
-                            class="flex call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
+                            class="flex hover:bg-gray-500 call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
                             <i class="fa-solid fa-phone"></i>
                             <p class="ml-2">Call</p>
                         </div>
@@ -281,7 +289,9 @@
                 <!-- cards -->
                 <div class="bg-white p-4 w-full rounded-lg shadow callBtn-container">
                     <div class="flex justify-between items-center mb-3">
-                        <img class="w-[50px]" src="assets/emergency.png" alt="">
+                        <div class="p-2 bg-red-100 rounded-2xl">
+                            <img class="w-[50px]" src="assets/emergency.png" alt="">
+                        </div>
                         <i id="heart" class="text-2xl heart-clicked fa-regular fa-heart"></i>
                     </div>
 
@@ -289,10 +299,10 @@
                         <h2 class="font-bold text-xl card-title">Electricity Helpline</h2>
                         <p>Electricity Outage</p>
                         <br>
-                        <span class="font-bold text-2xl card-num">999</span>
+                        <span class="font-bold text-2xl copy-num card-num">999</span>
 
                         <div class="flex flex-col">
-                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 ">
+                            <div class="bg-gray-200 w-auto self-start rounded-full mt-2 px-4 py-2 ">
                                 Electricity
                             </div>
                         </div>
@@ -300,12 +310,12 @@
 
                     <div class="flex gap-4 pt-6">
                         <div
-                            class="flex items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
+                            class="flex copy-button hover:bg-gray-200 items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
                             <i class="fa-solid fa-copy"></i>
                             <p class="ml-2">Copy</p>
                         </div>
                         <div
-                            class="flex call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
+                            class="flex hover:bg-gray-500 call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
                             <i class="fa-solid fa-phone"></i>
                             <p class="ml-2">Call</p>
                         </div>
@@ -317,7 +327,9 @@
                 <!-- cards -->
                 <div class="bg-white p-4 w-full rounded-lg shadow callBtn-container">
                     <div class="flex justify-between items-center mb-3">
-                        <img class="w-[50px]" src="assets/brac.png" alt="">
+                        <div class="p-2 bg-red-100 rounded-2xl">
+                            <img class="w-[50px]" src="assets/brac.png" alt="">
+                        </div>
                         <i id="heart" class="text-2xl heart-clicked fa-regular fa-heart"></i>
                     </div>
 
@@ -325,10 +337,10 @@
                         <h2 class="font-bold text-xl card-title">Brac Helpline</h2>
                         <p>Brac</p>
                         <br>
-                        <span class="font-bold text-2xl card-num">16445</span>
+                        <span class="font-bold text-2xl copy-num card-num">16445</span>
 
                         <div class="flex flex-col">
-                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 ">
+                            <div class="bg-gray-200 w-auto self-start rounded-full mt-2 px-4 py-2 ">
                                 NGO
                             </div>
                         </div>
@@ -336,12 +348,12 @@
 
                     <div class="flex gap-4 pt-6">
                         <div
-                            class="flex items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
+                            class="flex copy-button hover:bg-gray-200 items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
                             <i class="fa-solid fa-copy"></i>
                             <p class="ml-2">Copy</p>
                         </div>
                         <div
-                            class="flex call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
+                            class="flex hover:bg-gray-500 call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
                             <i class="fa-solid fa-phone"></i>
                             <p class="ml-2">Call</p>
                         </div>
@@ -353,17 +365,19 @@
                 <!-- cards -->
                 <div class="bg-white p-4 w-full rounded-lg shadow callBtn-container">
                     <div class="flex justify-between items-center mb-3">
-                        <img class="w-[50px]" src="assets/emergency.png" alt="">
+                        <div class="p-2 bg-red-100 rounded-2xl">
+                            <img class="w-[50px]" src="assets/Bangladesh-Railway.png" alt="">
+                        </div>
                         <i class="heart-clicked text-2xl fa-regular fa-heart"></i>
                     </div>
                     <div>
                         <h2 class="font-bold text-xl card-title">Bangladesh Railway Helpline</h2>
                         <p>Bangladesh Railway </p>
                         <br>
-                        <span class="font-bold text-2xl card-num">163</span>
+                        <span class="font-bold text-2xl copy-num card-num">163</span>
 
                         <div class="flex flex-col">
-                            <div class="bg-gray-200 rounded-full mt-2 px-4 py-2 ">
+                            <div class="bg-gray-200 w-auto self-start  rounded-full mt-2 px-4 py-2 ">
                                 Travel
                             </div>
                         </div>
@@ -371,12 +385,12 @@
 
                     <div class="flex gap-4 pt-6">
                         <div
-                            class="flex items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
+                            class="flex copy-button hover:bg-gray-200 items-center border border-gray-300 text-gray-600 py-2 rounded-lg flex-1 justify-center">
                             <i class="fa-solid fa-copy"></i>
                             <p class="ml-2">Copy</p>
                         </div>
                         <div
-                            class="flex call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
+                            class="flex hover:bg-gray-500 call-btn items-center py-2 rounded-lg bg-[#00A63E] text-white flex-1 justify-center">
                             <i class="fa-solid fa-phone"></i>
                             <p class="ml-2">Call</p>
                         </div>
@@ -394,20 +408,14 @@
                         <i class="fa-regular fa-clock"></i>
                         <h2 class="ml-2">Call History</h2>
                     </div>
-                    <div
-                        class="bg-[#00A63E] flex-1 py-3 text-xl text-center text-white font-semibold rounded-full px-3 ">
+                    <div id="history-clear"
+                        class="bg-[#00A63E] hover:bg-gray-500 flex-1 py-3 text-xl text-center text-white font-semibold rounded-full px-3 ">
                         Clear</div>
                 </div>
 
                 <!-- --div -->
                 <div id="history-Container">
-                    <div class="flex gap-5 text-xl mt-5 bg-[#FAFAFA] p-3 items-center">
-                        <div class="flex-2">
-                            <h2>Fire Service Number</h2>
-                            <p>999</p>
-                        </div>
-                        <div class="">time</div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
